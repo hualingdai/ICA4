@@ -7,7 +7,7 @@ FROM datasets.flight_revenue
 WHERE cargo_rev between '10000' and '16000'
 ORDER BY id DESC
 ```
-![ICA4](Visualization/ICA4-1.png)
+![ICA4](visualization/ICA4-1.png)
 
 -- Which artists has been on the spotify top 100 the most?
 ```SQL
@@ -19,7 +19,7 @@ ORDER BY top_artists DESC
 LIMIT 100
 ```
 
-![ICA4](Visualizaion/ICA4-2.png)
+![ICA4](visualizaion/ICA4-2.png)
 
 -- What is the position from 8-10? (which songs has position from 8-10) 
 ```SQL
@@ -29,7 +29,7 @@ WHERE  position in (8,9,10)
 limit 100
 ```
 
-![ICA4](Visualization/ICA4-3.png)
+![ICA4](visualization/ICA4-3.png)
 
 -- Which airports have business class rev below 9000?
 ```SQL
@@ -38,7 +38,7 @@ FROM datasets.flight_revenue
 WHERE business_class_rev < '9000'
 ORDER BY business_class_rev DESC
 ```
-![ICA4](Visualization/ICA4-4.png)
+![ICA4](visualization/ICA4-4.png)
 
 -- Which songs have more than 3 million streams?
 ```SQL
@@ -51,4 +51,4 @@ ORDER BY streams ASC
 LIMIT 100
 ```
 
-1[ICA4](Visualization/ICA4-4.png)
+1[ICA4](visualization/ICA4-4.png)
